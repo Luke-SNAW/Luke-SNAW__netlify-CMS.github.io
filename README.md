@@ -1,3 +1,5 @@
+# [VS code extensions](vs-code-extensions.md)
+---
 # Dev journal
 
 # 2020/09
