@@ -2,6 +2,7 @@
   - [Markdown All in One](#markdown-all-in-one)
   - [Git Graph](#git-graph)
   - [Emoji](#emoji)
+  - [#region folding for VS Code](#region-folding-for-vs-code)
   - [Regions With Colors](#regions-with-colors)
 - [Etc](#etc)
   - [Default VS Code As The Git Editor](#default-vs-code-as-the-git-editor)
@@ -13,6 +14,7 @@
 
 ## Git Graph
 ## Emoji
+## #region folding for VS Code
 ## Regions With Colors
 
 # Etc

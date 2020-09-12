@@ -4,6 +4,18 @@
 
 # 2020/09
 
+## 2020/09/12
+### Material-UI, tailwindcss
+>🌟change css framework to Material-UI Alpha channel v5 from tailwindcss
+
+tailwindcss doesn't has UI components. Even it resets default style like `<button>`. `<button>` is displayed as text.\
+It is solely for customizing from start.\
+
+tailwindcss는 프로젝트 완전 처음부터 커스텀 컴포넌트를 만들기 위해 default style도 reset해버리고 셋업에 도움되는 기능들로 구성됨.\
+`<button>`이 그냥 텍스트로 나오는거 보고 놀람.
+
+Material은 그냥 github star 수가 가장 많아서 선택 60k.
+
 ## 2020/09/11
 ### flutter
 ver. 1.20.1-pre
