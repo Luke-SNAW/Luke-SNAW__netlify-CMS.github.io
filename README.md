@@ -4,6 +4,31 @@
 
 # 2020/09
 
+## 2020/09/14
+
+### articles
+- [Understanding Scope and Context in JavaScript](http://ryanmorr.com/understanding-scope-and-context-in-javascript/)
+- [I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
+- [Why I Stopped Using Redux](https://dev.to/g_abud/why-i-quit-redux-1knl)
+
+### react
+Why is datepicker onChange event triggered twice?
+
+## 2020/09/13
+### firestore
+update timestamp to firestore
+### react hook
+Hook in hook -> error\
+So I extracted hook bind variables into top depth to use its to update in child components.\
+If it doens't work, I would try to insert child components into top level parent component.\
+If it also doens't work, I would try to use state libary like redux.\
+But, first try worked fine.
+
+hook 안에 hook은 error.\
+그래서 child에서 useState로 update하기 위해 훅에 쓰이는 변수를 최상단으로 빼냄.\
+안되면 child들은 최상단 function 안에 depth 하나 추가해서 넣는걸 시도하고\
+그래도 안되면 redux 같은 state library를 쓰려고 했는데 잘되는군.
+
 ## 2020/09/12
 ### Material-UI, tailwindcss
 >🌟change css framework to Material-UI Alpha channel v5 from tailwindcss
