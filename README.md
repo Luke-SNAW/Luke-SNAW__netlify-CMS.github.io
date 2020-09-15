@@ -7,11 +7,6 @@
 
 ## 2020/09/14
 
-### articles
-- [Understanding Scope and Context in JavaScript](http://ryanmorr.com/understanding-scope-and-context-in-javascript/)
-- [I never understood JavaScript closures](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
-- [Why I Stopped Using Redux](https://dev.to/g_abud/why-i-quit-redux-1knl)
-
 ### react
 Why is datepicker onChange event triggered twice?
 
