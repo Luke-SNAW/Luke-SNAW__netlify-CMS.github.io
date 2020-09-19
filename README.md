@@ -5,6 +5,29 @@
 
 # 2020/09
 
+## 2020/09/19
+### Material-UI
+It doesn't work with react form hook.\
+To work with that, Custom form control is required.\
+Next time, I will use another CSS framework.
+
+Material-UI has issue with next.js
+> Warning: Prop `className` did not match. Server: "MuiBox-root MuiBox-root-23" Client: "MuiBox-root MuiBox-root-1"
+
+Maybe these links are useful.
+- [Server Rendering](https://material-ui.com/guides/server-rendering/)
+- https://github.com/nblthree/nextjs-with-material-ui-and-styled-components/blob/master/.babelrc
+
+## 2020/09/17
+### react
+setState seems to send rendering signal.\
+When list data is updated and bool of toast is setStated, two is rerendered.\
+When two data is updated not setStated, nothing changes in DOM.
+
+setState는 refersh 시그널을 주는 듯.\
+list update는 데이터만 변경하고 toast 띄우는 bool은 setState 했는데 둘 다 화면에 갱신됨.\
+둘 다 데이터 변경했을 때는 화면 변경 없음
+
 ## 2020/09/14
 
 ### react
