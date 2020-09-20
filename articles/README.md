@@ -22,8 +22,11 @@ Common Functional Programming Algebraic data types for JavaScript that is compat
 
 ## [eruda](https://github.com/liriliri/eruda)
 Console for mobile browsers\
-[demo](https://eruda.liriliri.io)
+[demo](https://eruda.liriliri.io)\
 ![demo](https://raw.githubusercontent.com/liriliri/eruda/master/doc/qrcode.png)
+
+## [How to create text gradients using CSS easily.](https://dev.to/tejash023/how-to-create-text-gradients-using-css-easily-1kac)
+linear-gradient() + background-clip + text-fill-color
 
 # 2020/09/18
 ## [10 Tips to Improve Productivity using Chrome Dev Tools](https://blog.bitsrc.io/10-tips-to-improve-productivity-using-chrome-dev-tools-7918fc8203f3)
