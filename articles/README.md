@@ -1,5 +1,21 @@
 # Articles
 
+# 2020/09/21
+## [An introduction to Data Oriented Design with Rust](https://jamesmcm.github.io/blog/2020/07/25/intro-dod/)
+## [Weaved Webs](https://css-tricks.com/weaved-webs/)
+Jamstack's irony is that while the concept is simple, that simplicity can be the cause of complexity.
+## [The Power of Serverless for Front-End Developers](https://serverless.css-tricks.com/)
+Services and articles for serverless
+## [Netlify CMS](https://www.netlifycms.org/)
+Content is stored in your Git repository.\
+Netlify CMS is built as a single-page React app.
+## [Netlify CMS Open Authoring](https://css-tricks.com/netlify-cms-open-authoring/)
+Github based CMS -> Netlify CMS -> Netlify Authoring
+## [Serverless Stack](https://serverless-stack.com/)
+AWS Serverless Stack
+
+> If I was considering Jamstack for a particular project, and the grand total really was twelve services, I probably would reconsider, particularly if I could reach for a tool like WordPress and bring it down to one.
+
 # 2020/09/20
 ## [Effective limited parallel execution in JavaScript](https://medium.com/@arsenyyankovsky/effective-limited-parallel-execution-in-javascript-ea2a1fb9a632)
 [@supercharge/promise-pool](https://github.com/supercharge/promise-pool)
