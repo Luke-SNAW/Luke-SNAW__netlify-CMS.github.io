@@ -34,4 +34,10 @@
 
 ### [2020/09](./_posts/articles/2020-09-21-articles-2020-09.md)
 
+# Activities
+
+## 2021
+
+### [2021/Q2](./_posts/activities/2021-04-05-articles-2021-04.md)
+
 # [VS code extensions](vs-code-extensions.md)
