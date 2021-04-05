@@ -38,6 +38,6 @@
 
 ## 2021
 
-### [2021/Q2](./_posts/activities/2021-04-05-articles-2021-04.md)
+### [2021/Q2](./_posts/activities/2021-04-05-activities-2021-04.md)
 
 # [VS code extensions](vs-code-extensions.md)
