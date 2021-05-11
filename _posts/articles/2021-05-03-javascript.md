@@ -44,6 +44,16 @@ setTimeout(greeting("Nathan", "Software developer"), 3000);
 
 Then JavaScript will immediately execute the function without waiting, because you're passing a function call and not a function reference as the first parameter.
 
+## [The Evolution Of Jamstack](https://www.smashingmagazine.com/2021/05/evolution-jamstack/)
+
+## [Using Iframes vs Scripts for Embedding Components](https://blog.bitsrc.io/using-iframes-vs-scripts-for-embedding-components-e30eb569cb46)
+
+While Iframes are better with security, rendering than scripts,\
+scripts perform better in terms of loading time, SEO, accessibility, responsiveness, etc.
+
+
+
+
 # Tool
 
 ## [Pts](https://github.com/williamngan/pts)
