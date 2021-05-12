@@ -2,6 +2,24 @@
 title: Javascript
 date: 2021-05-03T00:10:22.649Z
 ---
+# Language
+
+## Closure
+
+### [How Closures Work in JavaScript: A Guide](https://javascript.plainenglish.io/closures-in-javascript-37182198dc20)
+
+A **closure** is a combination of a function bundled together (enclosed) with references to its surrounding state (the **lexical environment**).
+
+In other words, a closure gives you **access to an outer function’s scope from an inner function**. In JavaScript, closures are created every time a function is created, at function creation time.
+
+<details>
+<summary> <b>Disadvantages of Closures</b> </summary>
+
+- Closures prevent variables inside functions from being released by memory i.e. as long as the closure is active, the memory can’t be garbage collected. These variables will occupy memory and consume a lot of memory, which may lead to **memory leakage.** The solution to this problem is to delete all unnecessary local variables in time when these variables are not used i.e., set closure to null.
+
+- Creating a function inside a function leads to duplicity in memory and causes the **slowing down of the application**. The solution to this problem is to use closures only when you need privacy. Otherwise, use module patterns to create new objects with shared methods.
+
+</details>
 
 # 🌟
 
@@ -81,7 +99,9 @@ However, there is one more way to **return false**. It prevents the browser's de
 return false = e.preventDefault + stopPropagation + (stops callback execution)
 ```
 
+# React
 
+## [How to Correctly Debounce and Throttle Callbacks in React](https://dmitripavlutin.com/react-throttle-debounce/)
 
 
 # Tool
