@@ -89,3 +89,9 @@ return false = e.preventDefault + stopPropagation + (stops callback execution)
 ## [Pts](https://github.com/williamngan/pts)
 
 Pts is a typescript/javascript library for visualization and creative-coding.
+
+# Link
+
+## [{ 고퀄리티⚡개발 컨텐츠 모음 }](https://github.com/Integerous/goQuality-dev-contents)
+
+## [hacker rank](https://www.hackerrank.com/)
