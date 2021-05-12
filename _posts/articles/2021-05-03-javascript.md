@@ -8,13 +8,14 @@ date: 2021-05-03T00:10:22.649Z
 
 ### [How Closures Work in JavaScript: A Guide](https://javascript.plainenglish.io/closures-in-javascript-37182198dc20)
 
+<details>
+<summary>details</summary>
+
 A **closure** is a combination of a function bundled together (enclosed) with references to its surrounding state (the **lexical environment**).
 
 In other words, a closure gives you **access to an outer function’s scope from an inner function**. In JavaScript, closures are created every time a function is created, at function creation time.
 
-<details>
-<summary> <b>Disadvantages of Closures</b> </summary>
-
+#### Disadvantages of Closures
 - Closures prevent variables inside functions from being released by memory i.e. as long as the closure is active, the memory can’t be garbage collected. These variables will occupy memory and consume a lot of memory, which may lead to **memory leakage.** The solution to this problem is to delete all unnecessary local variables in time when these variables are not used i.e., set closure to null.
 
 - Creating a function inside a function leads to duplicity in memory and causes the **slowing down of the application**. The solution to this problem is to use closures only when you need privacy. Otherwise, use module patterns to create new objects with shared methods.
@@ -34,6 +35,9 @@ In other words, a closure gives you **access to an outer function’s scope from
 # ⭐
 
 ## ⭐ [JavaScript setTimeout() – How to Set a Timer in JavaScript or Sleep for N Seconds](https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/)
+
+<details>
+<summary>details</summary>
 
 setTimeout() method syntax
 
@@ -62,6 +66,9 @@ setTimeout(greeting("Nathan", "Software developer"), 3000);
 
 Then JavaScript will immediately execute the function without waiting, because you're passing a function call and not a function reference as the first parameter.
 
+</details>
+
+
 ## ⭐ [The Evolution Of Jamstack](https://www.smashingmagazine.com/2021/05/evolution-jamstack/)
 
 ## ⭐ [Using Iframes vs Scripts for Embedding Components](https://blog.bitsrc.io/using-iframes-vs-scripts-for-embedding-components-e30eb569cb46)
@@ -70,6 +77,9 @@ While Iframes are better with security, rendering than scripts,\
 scripts perform better in terms of loading time, SEO, accessibility, responsiveness, etc.
 
 ## ⭐️ [The JavaScript Event Propagation: Explained](https://javascript.plainenglish.io/event-propagation-in-javascript-4478852695cf)
+
+<details>
+<summary>details</summary>
 
 ### Event Delegation
 
@@ -98,6 +108,8 @@ However, there is one more way to **return false**. It prevents the browser's de
 ```
 return false = e.preventDefault + stopPropagation + (stops callback execution)
 ```
+
+</details>
 
 # React
 
