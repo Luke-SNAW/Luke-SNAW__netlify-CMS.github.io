@@ -9,7 +9,6 @@ date: 2021-05-03T00:10:22.649Z
 ### [How Closures Work in JavaScript: A Guide](https://javascript.plainenglish.io/closures-in-javascript-37182198dc20)
 
 <details>
-<summary>details</summary>
 
 A **closure** is a combination of a function bundled together (enclosed) with references to its surrounding state (the **lexical environment**).
 
@@ -37,7 +36,6 @@ In other words, a closure gives you **access to an outer function’s scope from
 ## ⭐ [JavaScript setTimeout() – How to Set a Timer in JavaScript or Sleep for N Seconds](https://www.freecodecamp.org/news/javascript-settimeout-how-to-set-a-timer-in-javascript-or-sleep-for-n-seconds/)
 
 <details>
-<summary>details</summary>
 
 setTimeout() method syntax
 
@@ -79,7 +77,6 @@ scripts perform better in terms of loading time, SEO, accessibility, responsiven
 ## ⭐️ [The JavaScript Event Propagation: Explained](https://javascript.plainenglish.io/event-propagation-in-javascript-4478852695cf)
 
 <details>
-<summary>details</summary>
 
 ### Event Delegation
 
@@ -121,6 +118,48 @@ return false = e.preventDefault + stopPropagation + (stops callback execution)
 ## [Pts](https://github.com/williamngan/pts)
 
 Pts is a typescript/javascript library for visualization and creative-coding.
+
+
+
+## [Three things to never build yourself: auth, notifications, payments](https://news.ycombinator.com/item?id=27144930)
+
+<details>
+
+rgbrenner 4 hours ago [–]
+
+Never outsource Auth. Maintain control over user accounts. That's the life blood of your business. If you have to ask everyone to reset their password because your auth provider increases their pricing or goes out of business, the churn will likely kill your company.
+I would say the same for Stripe, but at least they'll help you migrate off their platform. Auth providers cant help you because the passwords are hashed... You need the same algo or you cant authenticate using the data they have.
+
+And the only way off without a mass password reset is a silent migration in the background: migrate the user when they login.. but we all know that will take months and you will never get 100% to login during the migration period.
+
+Pick an auth provider and you better believe in their business as much as your own. You will incur damage when you leave.
+
+reply
+
+
+mooreds 4 hours ago [–]
+
+You can also choose to self host. Keycloak and FusionAuth (disclosure, I am an employee) let you self host. You then have the user database in your systems.
+
+> And the only way off without a mass password reset is a silent migration in the background: migrate the user when they login.. but we all know that will take months and you will never get 100% to login during the migration period.
+
+Actually, not true. I can't speak for every auth provider, but FusionAuth and Auth0 both let you have the password hashes. If you know the algo (ask your provider!), you can load the hashes (and other ancillary password data like the salt) and your users will never be the wiser.
+
+Here's a guide I wrote about how to migrate off of Auth0: https://fusionauth.io/docs/v1/tech/guides/auth0-migration/ The end goal of the guide is to move to FusionAuth, but the steps to get your password hashes out of Auth0 (the 'Exporting Users' section) will work no matter where you migrate to.
+
+reply
+
+
+sixhobbits 2 hours ago [–]
+
++1.
+I maintained and extended a self rolled auth system built on top of django and it was a constant headache. We lost weeks of engineering productivity fighting with keeping the various libraries up to date and running into the usual "forgot password" edgecases.
+
+I spent a few days with FusionAuth for a demo project and once I grokked it I really wished we had used it or something similar instead. Amazing abstraction layer to have at your disposal.
+
+</details>
+
+
 
 # Link
 
