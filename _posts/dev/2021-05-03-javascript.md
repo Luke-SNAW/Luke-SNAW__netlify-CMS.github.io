@@ -4,6 +4,12 @@ date: 2021-05-03T00:10:22.649Z
 ---
 # Language
 
+## Syntax
+
+### [Modern Javascript: Everything you missed over the last 10 years](https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years)
+
+for terminology
+
 ## Closure
 
 ### [How Closures Work in JavaScript: A Guide](https://javascript.plainenglish.io/closures-in-javascript-37182198dc20)
