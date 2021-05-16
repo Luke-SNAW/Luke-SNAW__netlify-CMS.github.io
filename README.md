@@ -1,3 +1,19 @@
+# Development
+
+## [Javascript](_posts/dev/2021-05-03-javascript.md)
+
+## [API](_posts/dev/2021-05-04-api.md)
+
+## [Security](_posts/dev/2021-05-05-security.md)
+
+## [Tools](_posts/dev/2021-05-05-tools.md)
+
+## [Web performance](_posts/dev/2021-05-09-web-performance.md)
+
+## [Software Engineering](_posts/dev/2021-05-12-software-engineering.md)
+
+## [HTML](_posts/dev/2021-05-14-html.md)
+
 # Dev journal
 
 ## 2021
