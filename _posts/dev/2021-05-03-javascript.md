@@ -6,9 +6,7 @@ date: 2021-05-03T00:10:22.649Z
 
 ## Syntax
 
-### [Modern Javascript: Everything you missed over the last 10 years](https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years)
-
-for terminology
+### [Modern Javascript: Everything you missed over the last 10 years](https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years) for terminology
 
 ## Closure
 
@@ -165,7 +163,62 @@ I spent a few days with FusionAuth for a demo project and once I grokked it I re
 
 </details>
 
+# Security
 
+## [7 Steps to Secure JavaScript in 2021](https://blog.bitsrc.io/8-steps-to-secure-javascript-in-2021-6d54d5415264)
+
+<details>
+
+### JavaScript Integrity Checks
+
+```HTML
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+```
+
+### Frequent Tests for NPM Vulnerabilities
+
+Lately, GitHub introduced a bot name Dependabot, to scan the NPM dependencies automatically and notify you by email stating the risks.
+
+Besides, suppose you enabled the “automated security fix PRs” option. In that case, GitHub will send an automated PR to fix these issues, addressing the security risks in advance.
+
+### Keep Minor and Patch Version Updates Enabled
+
+Have you ever seen ^ or ~ symbol in front of any NPM package version? These symbols indicate the automatic version bump for minor and patch versions.
+
+</details>
+
+# With CSS
+
+## [How to easily add CSS animations to your projects](https://gomakethings.com/how-to-easily-add-css-animations-to-your-projects/)
+
+<details>
+
+For years, my go-to recommendation for CSS animations was [animate.css by Daniel Eden](https://animate.style/).
+
+It’s a great library, but it also *a library*. I generally only need one or two animations, and it includes way more stuff than I typically want in a project.
+
+So I was delighted to discover [Animista by Ana Travis](https://animista.net/) last week. Animista is a tool that lets you select the animation you want, and then copy/paste the CSS for it into your project.
+
+### Important accessibility concerns
+
+Animations can make people who experience motion sickness, vertigo, and other conditions physically sick, dizzy, and disoriented.
+
+Both Windows and macOS provide a way to disable animations at the operating system level, *and* tell websites that they would prefer not to see them as well.
+
+We can access this setting through a CSS media query: `prefers-reduced-motion`.
+
+```css
+@media (prefers-reduced-motion: reduce) {
+	/* The user does not want animations */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	/* The user is OK with animations */
+}
+```
+
+</details>
 
 # Link
 
