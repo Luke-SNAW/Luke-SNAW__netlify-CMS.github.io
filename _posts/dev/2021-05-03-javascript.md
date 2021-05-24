@@ -4,9 +4,23 @@ date: 2021-05-03T00:10:22.649Z
 ---
 # Language
 
+## Concepts
+
+<details>
+
+### [Map of Javascript](https://github.com/mechaniac/Map-of-Javascript)
+
+### [Classes vs. prototypal inheritance in vanilla JS](https://gomakethings.com/classes-vs.-prototypal-inheritance-in-vanilla-js/)
+
+</details>
+
 ## Syntax
 
+<details>
+
 ### [Modern Javascript: Everything you missed over the last 10 years](https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years) for terminology
+
+</details>
 
 ## Closure
 
@@ -112,18 +126,33 @@ return false = e.preventDefault + stopPropagation + (stops callback execution)
 
 </details>
 
+# Visual
+
+## [2D Optics Demos in Javascript](https://www.philipzucker.com/aesthetic-javascript-eduction/)
+
 # React
 
 ## [How to Correctly Debounce and Throttle Callbacks in React](https://dmitripavlutin.com/react-throttle-debounce/)
 
-
 # Tool
+
+## With Google
+
+<details>
+
+### [How to Use Node.js with Google Sheets](https://javascript.plainenglish.io/how-to-use-node-js-with-google-sheets-c256c26e10fc)
+
+### [Embedding Google Forms in a Static Website Without iFrames](https://spin.atomicobject.com/2021/05/20/embedding-google-forms/)
+
+</details>
 
 ## [Pts](https://github.com/williamngan/pts)
 
 Pts is a typescript/javascript library for visualization and creative-coding.
 
+## [ReacType 7.0 - A visual prototyping tool for React developers](https://reactype.io/#reactype7)
 
+## [Top 10 Chrome DevTools tips & tricks](https://areknawo.com/top-10-chrome-devtools-tips-tricks/)
 
 ## [Three things to never build yourself: auth, notifications, payments](https://news.ycombinator.com/item?id=27144930)
 
@@ -216,6 +245,44 @@ We can access this setting through a CSS media query: `prefers-reduced-motion`.
 @media (prefers-reduced-motion: no-preference) {
 	/* The user is OK with animations */
 }
+```
+
+</details>
+
+# Reference Code
+
+<details>
+
+## [Snake code golf](https://codepen.io/SleepyPierre/pen/WNpxLZN?editors=0010)
+
+```javascript
+const root = document.getElementById('root');
+const color = (i, j, c) => root.children[i].children[j].style.backgroundColor = c;
+const isInSnake = (x, y) => s.locs.some(l => l[0] === x && l[1] === y);
+const newS = () => ({ locs: [[n / 2, n / 2]], food: null, tdir: 0, dir:0 , timeout: 0 });
+let n = 20, s;
+document.onkeydown = ({ keyCode: k }) => {
+  if (k === 13) {
+    root.innerHTML = Array(n).fill('<div>' + Array(n).fill('<div></div>').join('') + '</div>').join('');
+    if (s) clearTimeout(s.timeout);
+    s = newS();
+    gameLoop();
+  }
+  if (k > 36 && k < 41 && s.dir % 2 == k % 2) s.tdir = k - 37;
+};
+const gameLoop = () => {
+  document.getElementById('score').textContent = s.locs.length - 1;
+  s.dir = s.tdir;
+  while (!s.food || isInSnake(...s.food)) s.food = [0,0].map(() => Math.floor(Math.random() * n)); 
+  color(...s.food, '#eee');
+  const [x, y] = s.locs[0].map((n, i) => s.dir % 2 !== i ? n + s.dir + i - 2 : n);
+  if ([x, y].every((n, i) => n === s.food[i])) s.food = null;
+  else if (Math.min(x, y) < 0 || Math.max(x, y) >= n || isInSnake(x, y)) return;
+  else color(...s.locs.pop(), '#333');
+  s.locs.unshift([x, y]);
+  color(x, y, '#5a7');
+  s.timeout = setTimeout(gameLoop, 250)
+};
 ```
 
 </details>
