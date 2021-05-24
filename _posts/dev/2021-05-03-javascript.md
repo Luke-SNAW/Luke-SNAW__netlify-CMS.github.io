@@ -2,6 +2,7 @@
 title: Javascript
 date: 2021-05-03T00:10:22.649Z
 ---
+
 # Language
 
 ## Concepts
@@ -33,9 +34,18 @@ A **closure** is a combination of a function bundled together (enclosed) with re
 In other words, a closure gives you **access to an outer function’s scope from an inner function**. In JavaScript, closures are created every time a function is created, at function creation time.
 
 #### Disadvantages of Closures
+
 - Closures prevent variables inside functions from being released by memory i.e. as long as the closure is active, the memory can’t be garbage collected. These variables will occupy memory and consume a lot of memory, which may lead to **memory leakage.** The solution to this problem is to delete all unnecessary local variables in time when these variables are not used i.e., set closure to null.
 
 - Creating a function inside a function leads to duplicity in memory and causes the **slowing down of the application**. The solution to this problem is to use closures only when you need privacy. Otherwise, use module patterns to create new objects with shared methods.
+
+</details>
+
+## Patterns
+
+<details>
+
+### [Evolution of Modules in JavaScript with Dependency Injection](https://javascript.plainenglish.io/evolution-of-modules-in-javascript-with-dependency-injection-5c51a3f6442e)
 
 </details>
 
@@ -83,7 +93,6 @@ setTimeout(greeting("Nathan", "Software developer"), 3000);
 Then JavaScript will immediately execute the function without waiting, because you're passing a function call and not a function reference as the first parameter.
 
 </details>
-
 
 ## ⭐ [The Evolution Of Jamstack](https://www.smashingmagazine.com/2021/05/evolution-jamstack/)
 
@@ -169,7 +178,6 @@ Pick an auth provider and you better believe in their business as much as your o
 
 reply
 
-
 mooreds 4 hours ago [–]
 
 You can also choose to self host. Keycloak and FusionAuth (disclosure, I am an employee) let you self host. You then have the user database in your systems.
@@ -181,7 +189,6 @@ Actually, not true. I can't speak for every auth provider, but FusionAuth and Au
 Here's a guide I wrote about how to migrate off of Auth0: https://fusionauth.io/docs/v1/tech/guides/auth0-migration/ The end goal of the guide is to move to FusionAuth, but the steps to get your password hashes out of Auth0 (the 'Exporting Users' section) will work no matter where you migrate to.
 
 reply
-
 
 sixhobbits 2 hours ago [–]
 
@@ -225,7 +232,7 @@ Have you ever seen ^ or ~ symbol in front of any NPM package version? These symb
 
 For years, my go-to recommendation for CSS animations was [animate.css by Daniel Eden](https://animate.style/).
 
-It’s a great library, but it also *a library*. I generally only need one or two animations, and it includes way more stuff than I typically want in a project.
+It’s a great library, but it also _a library_. I generally only need one or two animations, and it includes way more stuff than I typically want in a project.
 
 So I was delighted to discover [Animista by Ana Travis](https://animista.net/) last week. Animista is a tool that lets you select the animation you want, and then copy/paste the CSS for it into your project.
 
@@ -233,17 +240,17 @@ So I was delighted to discover [Animista by Ana Travis](https://animista.net/) l
 
 Animations can make people who experience motion sickness, vertigo, and other conditions physically sick, dizzy, and disoriented.
 
-Both Windows and macOS provide a way to disable animations at the operating system level, *and* tell websites that they would prefer not to see them as well.
+Both Windows and macOS provide a way to disable animations at the operating system level, _and_ tell websites that they would prefer not to see them as well.
 
 We can access this setting through a CSS media query: `prefers-reduced-motion`.
 
 ```css
 @media (prefers-reduced-motion: reduce) {
-	/* The user does not want animations */
+  /* The user does not want animations */
 }
 
 @media (prefers-reduced-motion: no-preference) {
-	/* The user is OK with animations */
+  /* The user is OK with animations */
 }
 ```
 
@@ -256,14 +263,24 @@ We can access this setting through a CSS media query: `prefers-reduced-motion`.
 ## [Snake code golf](https://codepen.io/SleepyPierre/pen/WNpxLZN?editors=0010)
 
 ```javascript
-const root = document.getElementById('root');
-const color = (i, j, c) => root.children[i].children[j].style.backgroundColor = c;
-const isInSnake = (x, y) => s.locs.some(l => l[0] === x && l[1] === y);
-const newS = () => ({ locs: [[n / 2, n / 2]], food: null, tdir: 0, dir:0 , timeout: 0 });
-let n = 20, s;
+const root = document.getElementById("root");
+const color = (i, j, c) =>
+  (root.children[i].children[j].style.backgroundColor = c);
+const isInSnake = (x, y) => s.locs.some((l) => l[0] === x && l[1] === y);
+const newS = () => ({
+  locs: [[n / 2, n / 2]],
+  food: null,
+  tdir: 0,
+  dir: 0,
+  timeout: 0,
+});
+let n = 20,
+  s;
 document.onkeydown = ({ keyCode: k }) => {
   if (k === 13) {
-    root.innerHTML = Array(n).fill('<div>' + Array(n).fill('<div></div>').join('') + '</div>').join('');
+    root.innerHTML = Array(n)
+      .fill("<div>" + Array(n).fill("<div></div>").join("") + "</div>")
+      .join("");
     if (s) clearTimeout(s.timeout);
     s = newS();
     gameLoop();
@@ -271,17 +288,20 @@ document.onkeydown = ({ keyCode: k }) => {
   if (k > 36 && k < 41 && s.dir % 2 == k % 2) s.tdir = k - 37;
 };
 const gameLoop = () => {
-  document.getElementById('score').textContent = s.locs.length - 1;
+  document.getElementById("score").textContent = s.locs.length - 1;
   s.dir = s.tdir;
-  while (!s.food || isInSnake(...s.food)) s.food = [0,0].map(() => Math.floor(Math.random() * n)); 
-  color(...s.food, '#eee');
-  const [x, y] = s.locs[0].map((n, i) => s.dir % 2 !== i ? n + s.dir + i - 2 : n);
+  while (!s.food || isInSnake(...s.food))
+    s.food = [0, 0].map(() => Math.floor(Math.random() * n));
+  color(...s.food, "#eee");
+  const [x, y] = s.locs[0].map((n, i) =>
+    s.dir % 2 !== i ? n + s.dir + i - 2 : n
+  );
   if ([x, y].every((n, i) => n === s.food[i])) s.food = null;
   else if (Math.min(x, y) < 0 || Math.max(x, y) >= n || isInSnake(x, y)) return;
-  else color(...s.locs.pop(), '#333');
+  else color(...s.locs.pop(), "#333");
   s.locs.unshift([x, y]);
-  color(x, y, '#5a7');
-  s.timeout = setTimeout(gameLoop, 250)
+  color(x, y, "#5a7");
+  s.timeout = setTimeout(gameLoop, 250);
 };
 ```
 
@@ -289,6 +309,6 @@ const gameLoop = () => {
 
 # Link
 
-## [{ 고퀄리티⚡개발 컨텐츠 모음 }](https://github.com/Integerous/goQuality-dev-contents)
+## [ 고퀄리티⚡개발 컨텐츠 모음](https://github.com/Integerous/goQuality-dev-contents)
 
 ## [hacker rank](https://www.hackerrank.com/)
