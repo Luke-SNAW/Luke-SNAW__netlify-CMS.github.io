@@ -49,6 +49,18 @@ In other words, a closure gives you **access to an outer function’s scope from
 
 </details>
 
+# Edge
+
+<details>
+
+Not supported widely.
+
+## [New Standards to Access Device Hardware using JavaScript](https://blog.bitsrc.io/new-standards-to-access-user-device-hardware-using-javascript-86b0c156dd3d)
+
+WebHID, WebNFC, and WebUSB have opened up new avenues to interact with user’s device hardware for web apps.
+
+</details>
+
 # 🌟
 
 ## 🌟 [JavaScript Execution Context and Hoisting Explained with Code Examples](https://www.freecodecamp.org/news/javascript-execution-context-and-hoisting/)
