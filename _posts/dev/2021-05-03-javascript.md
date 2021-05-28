@@ -13,6 +13,8 @@ date: 2021-05-03T00:10:22.649Z
 
 ### [Classes vs. prototypal inheritance in vanilla JS](https://gomakethings.com/classes-vs.-prototypal-inheritance-in-vanilla-js/)
 
+### [How the JavaScript Event Loop Works](https://javascript.plainenglish.io/what-is-the-javascript-event-loop-84d21ef276ee)
+
 </details>
 
 ## Syntax
@@ -153,7 +155,13 @@ return false = e.preventDefault + stopPropagation + (stops callback execution)
 
 # React
 
+<details>
+
 ## [How to Correctly Debounce and Throttle Callbacks in React](https://dmitripavlutin.com/react-throttle-debounce/)
+
+## [How to Cleanup Async Effects in React](https://dmitripavlutin.com/react-cleanup-async-effects/)
+
+</details>
 
 # Tool
 
