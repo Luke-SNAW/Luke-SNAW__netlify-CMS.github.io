@@ -161,6 +161,8 @@ return false = e.preventDefault + stopPropagation + (stops callback execution)
 
 ## [How to Cleanup Async Effects in React](https://dmitripavlutin.com/react-cleanup-async-effects/)
 
+## [How to Create a Reusable Custom Hook with React and TypeScript](https://javascript.plainenglish.io/how-to-create-a-reusable-custom-hook-with-react-js-and-typescript-6e5ef8340e1)
+
 </details>
 
 # Tool
