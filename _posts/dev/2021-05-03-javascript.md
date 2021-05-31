@@ -51,6 +51,14 @@ In other words, a closure gives you **access to an outer function’s scope from
 
 </details>
 
+# State management
+
+<details>
+
+## [Stop using actions in Vuex](https://javascript.plainenglish.io/stop-using-actions-in-vuex-a14e23a7b0e6)
+
+</details>
+
 # Edge
 
 <details>
@@ -167,6 +175,10 @@ return false = e.preventDefault + stopPropagation + (stops callback execution)
 
 # Tool
 
+<details>
+
+## [Physical Computing with JavaScript (1/8)](https://javascript.plainenglish.io/physical-computing-with-javascript-1-8-lets-get-started-642a9954adb2)
+
 ## With Google
 
 <details>
@@ -218,6 +230,8 @@ sixhobbits 2 hours ago [–]
 I maintained and extended a self rolled auth system built on top of django and it was a constant headache. We lost weeks of engineering productivity fighting with keeping the various libraries up to date and running into the usual "forgot password" edgecases.
 
 I spent a few days with FusionAuth for a demo project and once I grokked it I really wished we had used it or something similar instead. Amazing abstraction layer to have at your disposal.
+
+</details>
 
 </details>
 
