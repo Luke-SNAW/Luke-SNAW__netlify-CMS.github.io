@@ -10,6 +10,8 @@ Permafrost Engine is an OpenGL 3.3 Real Time Strategy game engine written in C. 
 
 # [Teach Yourself Demoscene in 14 Days](https://github.com/psenough/teach_yourself_demoscene_in_14_days)
 
+# [Things I've learned as a Sr Engineer](https://old.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/)
+
 # Interested
 
 <details>
