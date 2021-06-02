@@ -243,25 +243,6 @@ I spent a few days with FusionAuth for a demo project and once I grokked it I re
 
 <details>
 
-## [Performance Test](https://vanillajstoolkit.com/boilerplates/performance-test/)
-
-If you just want to log results to the console
-```javascript
-console.time('My awesome performance test!');
-// Do some JS stuff...
-console.timeEnd('My awesome performance test!');
-// This will log "My awesome performance test!: 1234.567ms" (with the actual time, of course)
-```
-
-If you want to render the results into the DOM/UI
-
-```javascript
-var start = performance.now();
-// Do some JS stuff...
-var end = performance.now();
-console.log('This took ' + (end - start) + 'ms to complete');
-```
-
 </details>
 
 # Security
