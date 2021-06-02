@@ -177,9 +177,29 @@ return false = e.preventDefault + stopPropagation + (stops callback execution)
 
 <details>
 
+## Visual Studio Code
+
+<details>
+
+### [Vue VSCode Snippets](https://marketplace.visualstudio.com/items?itemName=sdras.vue-vscode-snippets)
+
+### [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets)
+
+### [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
+
+### [Peacock](https://marketplace.visualstudio.com/items?itemName=johnpapa.vscode-peacock)
+
+### [Visual Studio IntelliCode](https://visualstudio.microsoft.com/en/services/intellicode/)
+
+### [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
+
+</details>
+
 ## [The Vanilla JavaScript Toolkit](https://vanillajstoolkit.com/)
 
 A collection of native JavaScript [methods](https://vanillajstoolkit.com/reference), [helper functions](https://vanillajstoolkit.com/helpers), [libraries](https://vanillajstoolkit.com/libraries), [boilerplates](boilerplates), and [learning resources](https://vanillajstoolkit.com/resources).
+
+## [RetireJS](https://github.com/RetireJS/retire.js)
 
 ## [Physical Computing with JavaScript (1/8)](https://javascript.plainenglish.io/physical-computing-with-javascript-1-8-lets-get-started-642a9954adb2)
 
