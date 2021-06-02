@@ -177,6 +177,10 @@ return false = e.preventDefault + stopPropagation + (stops callback execution)
 
 <details>
 
+## [The Vanilla JavaScript Toolkit](https://vanillajstoolkit.com/)
+
+A collection of native JavaScript [methods](https://vanillajstoolkit.com/reference), [helper functions](https://vanillajstoolkit.com/helpers), [libraries](https://vanillajstoolkit.com/libraries), [boilerplates](boilerplates), and [learning resources](https://vanillajstoolkit.com/resources).
+
 ## [Physical Computing with JavaScript (1/8)](https://javascript.plainenglish.io/physical-computing-with-javascript-1-8-lets-get-started-642a9954adb2)
 
 ## With Google
