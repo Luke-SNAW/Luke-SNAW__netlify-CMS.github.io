@@ -12,6 +12,23 @@ Permafrost Engine is an OpenGL 3.3 Real Time Strategy game engine written in C. 
 
 # [Things I've learned as a Sr Engineer](https://old.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/)
 
+# Interview
+
+<details>
+
+## [Tech interviews are stupid](https://gomakethings.com/tech-interviews-are-stupid/)
+Coding is solving problems. A big part of that is looking stuff up.
+
+Like, seriously, the most important skill a developer can have it knowing how to research solutions to problems. Specifically…
+
+- Breaking problems into parts
+- Identifying what to search for
+- Knowing how to sort good info from junk
+
+A better tech interview process might involve presenting a candidate with a problem and then letting them actually Google stuff. Hell, don’t just let them—encourage them!
+
+</details>
+
 # Interested
 
 <details>
