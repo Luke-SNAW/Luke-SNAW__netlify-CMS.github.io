@@ -21,6 +21,26 @@ date: 2021-05-03T00:10:22.649Z
 
 <details>
 
+### [The arguments object in JavaScript functions](https://gomakethings.com/the-arguments-object-in-javascript-functions/)
+
+<details>
+
+Within a function, you can use the `arguments` variable to get an array-like list of all of the arguments passed into the function.
+
+You don’t need to define it ahead of time. It’s a native JavaScript object.
+
+</details>
+
+### [Arrow functions in vanilla JS](https://gomakethings.com/arrow-functions-in-vanilla-js/)
+
+<details>
+
+In arrow functions, `arguments` doesn’t exist.
+
+[Rest parameters](https://gomakethings.com/rest-parameters-in-javascript-functions/) do work, however. Here’s the add() function rewritten as an arrow function with rest parameters.
+
+</details>
+
 ### [Modern Javascript: Everything you missed over the last 10 years](https://turriate.com/articles/modern-javascript-everything-you-missed-over-10-years) for terminology
 
 </details>
@@ -63,7 +83,7 @@ In other words, a closure gives you **access to an outer function’s scope from
 
 <details>
 
-Not supported widely.
+## [What is FIDO2 WebAuthn? Why you need to seriously consider it for your organization](https://www.secureauth.com/blog/what-is-fido2-webauthn/)
 
 ## [New Standards to Access Device Hardware using JavaScript](https://blog.bitsrc.io/new-standards-to-access-user-device-hardware-using-javascript-86b0c156dd3d)
 
